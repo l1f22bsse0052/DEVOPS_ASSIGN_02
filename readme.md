@@ -6,3 +6,6 @@ The folder structure has already been created along with server file to serv htm
 * test it and push to respective  remote feature branch
 *  I have included dev and build scripts to be used with parcel.js
 * you are not supposed to push your build (dist folder)
+
+
+<mark>!!!You might need to create dummy files of other pages in your local directory to build the app</mark>
