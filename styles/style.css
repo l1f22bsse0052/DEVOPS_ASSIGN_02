@@ -14,9 +14,9 @@ body {
 
 /* Navigation */
 .navbar {
-    background: rgba(255, 255, 255, 0.98);
-    backdrop-filter: blur(15px);
-    padding: 1rem 0;
+    background: rgba(255, 255, 255, 0.95);
+    backdrop-filter: blur(10px);
+    padding: 1.5rem 0;
     position: fixed;
     width: 100%;
     top: 0;
@@ -30,13 +30,13 @@ body {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding: 0 1.5rem;
+    padding: 0 3rem;
 }
 
 .nav-logo {
-    color: #ff6b6b;
-    font-size: 1.6rem;
-    font-weight: 800;
+    color: #667eea;
+    font-size: 2.2rem;
+    font-weight: bold;
 }
 
 .nav-menu {
@@ -47,11 +47,11 @@ body {
 
 .nav-link {
     text-decoration: none;
-    color: #222;
-    font-weight: 700;
+    color: #333;
+    font-weight: 600;
     transition: all 0.3s ease;
-    padding: 0.6rem 1.2rem;
-    border-radius: 6px;
+    padding: 0.8rem 1.5rem;
+    border-radius: 8px;
 }
 
 .nav-link:hover,
@@ -63,7 +63,7 @@ body {
 
 /* Hero Section */
 .hero {
-    height: 75vh;
+    height: 85vh;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -105,9 +105,9 @@ body {
 
 /* Main Content */
 .container {
-    max-width: 1100px;
-    margin: 1.5rem auto;
-    padding: 0 1.5rem;
+    max-width: 1400px;
+    margin: 3rem auto;
+    padding: 0 3rem;
 }
 
 .features {
@@ -147,9 +147,9 @@ body {
 
 .upcoming-events h2 {
     text-align: center;
-    color: #222;
-    margin-bottom: 2rem;
-    font-size: 2.2rem;
+    color: #333;
+    margin-bottom: 3rem;
+    font-size: 2.8rem;
 }
 
 .events-grid {
@@ -181,16 +181,17 @@ body {
 .event-date {
     color: #ff6b6b;
     font-weight: bold;
-    margin-bottom: 1rem;
+    margin-bottom: 1.2rem;
+    font-size: 1.1rem;
 }
 
 /* Footer */
 .footer {
-    background: rgba(0, 0, 0, 0.9);
+    background: linear-gradient(135deg, #2c3e50 0%, #34495e 100%);
     color: white;
     text-align: center;
-    padding: 2rem;
-    margin-top: 3rem;
+    padding: 3rem;
+    margin-top: 6rem;
 }
 
 /* Responsive Design */
@@ -210,7 +211,11 @@ body {
     }
 
     .container {
-        padding: 0 1rem;
+        padding: 0 1.5rem;
+    }
+    
+    .features {
+        grid-template-columns: 1fr;
     }
     
     .features {
