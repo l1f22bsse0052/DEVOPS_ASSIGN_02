@@ -1,0 +1,27 @@
+{
+  "name": "devops_assign_02",
+  "version": "1.0.0",
+  "description": "The folder structure has already been created along with server file to serv html pages from dist folder * create  your feature branches * add your code * build it using parcel * test it and push to respective  remote feature branch *  I have included dev and build scripts to be used with parcel.js * you are not supposed to push your build (dist folder)",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "dev": "parcel src/*.html --port 3000",
+    "build": "parcel build src/*.html --public-url ./"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/l1f22bsse0052/DEVOPS_ASSIGN_02.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/l1f22bsse0052/DEVOPS_ASSIGN_02/issues"
+  },
+  "homepage": "https://github.com/l1f22bsse0052/DEVOPS_ASSIGN_02#readme",
+  "dependencies": {
+    "express": "^5.1.0"
+  },
+  "devDependencies": {
+    "parcel": "^2.16.1"
+  }
+}
