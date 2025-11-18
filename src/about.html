@@ -1,0 +1,182 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>About - Campus Event Management</title>
+    <link rel="stylesheet" href="../styles/style.css">
+    <style>
+        .about-hero {
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            color: white;
+            padding: 120px 0 80px;
+            text-align: center;
+        }
+        
+        .mission-vision {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 2rem;
+            margin: 3rem 0;
+        }
+        
+        .mission-card, .vision-card {
+            background: white;
+            padding: 2rem;
+            border-radius: 15px;
+            box-shadow: 0 8px 25px rgba(0,0,0,0.1);
+            text-align: center;
+        }
+        
+        .team-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 2rem;
+            margin: 3rem 0;
+        }
+        
+        .team-member {
+            background: white;
+            padding: 2rem;
+            border-radius: 15px;
+            text-align: center;
+            box-shadow: 0 4px 15px rgba(0,0,0,0.1);
+        }
+        
+        .team-member img {
+            width: 120px;
+            height: 120px;
+            border-radius: 50%;
+            margin-bottom: 1rem;
+            background: #667eea;
+        }
+        
+        .stats {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+            gap: 2rem;
+            margin: 3rem 0;
+        }
+        
+        .stat-card {
+            background: white;
+            padding: 2rem;
+            border-radius: 15px;
+            text-align: center;
+            box-shadow: 0 4px 15px rgba(0,0,0,0.1);
+        }
+        
+        .stat-number {
+            font-size: 2.5rem;
+            font-weight: bold;
+            color: #667eea;
+            margin-bottom: 0.5rem;
+        }
+    </style>
+</head>
+<body>
+    <nav class="navbar">
+        <div class="nav-container">
+            <h1 class="nav-logo">CampusEvents</h1>
+            <ul class="nav-menu">
+                <li><a href="index.html" class="nav-link">Home</a></li>
+                <li><a href="events.html" class="nav-link">Events</a></li>
+                <li><a href="gallery.html" class="nav-link">Gallery</a></li>
+                <li><a href="about.html" class="nav-link active">About</a></li>
+                <li><a href="contact.html" class="nav-link">Contact</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <section class="about-hero">
+        <div class="container">
+            <h1>About Campus Event Management</h1>
+            <p>Connecting students, faculty, and the community through memorable events</p>
+        </div>
+    </section>
+
+    <main class="container">
+        <section class="mission-vision">
+            <div class="mission-card">
+                <h2>🎯 Our Mission</h2>
+                <p>To create a vibrant campus community by facilitating engaging, educational, and entertaining events that bring students, faculty, and staff together.</p>
+            </div>
+            <div class="vision-card">
+                <h2>🔭 Our Vision</h2>
+                <p>To be the leading platform for campus event management, fostering connections and creating unforgettable university experiences.</p>
+            </div>
+        </section>
+
+        <section class="stats">
+            <div class="stat-card">
+                <div class="stat-number">500+</div>
+                <p>Events Organized</p>
+            </div>
+            <div class="stat-card">
+                <div class="stat-number">50K+</div>
+                <p>Students Reached</p>
+            </div>
+            <div class="stat-card">
+                <div class="stat-number">100+</div>
+                <p>Partner Organizations</p>
+            </div>
+            <div class="stat-card">
+                <div class="stat-number">15+</div>
+                <p>University Departments</p>
+            </div>
+        </section>
+
+        <section style="background: white; padding: 3rem; border-radius: 15px; margin: 3rem 0;">
+            <h2 style="text-align: center; margin-bottom: 2rem;">What We Do</h2>
+            <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(250px, 1fr)); gap: 2rem;">
+                <div style="text-align: center;">
+                    <h3>🎓 Academic Events</h3>
+                    <p>Seminars, workshops, and conferences that enhance learning</p>
+                </div>
+                <div style="text-align: center;">
+                    <h3>🎉 Social Gatherings</h3>
+                    <p>Cultural festivals, parties, and community building events</p>
+                </div>
+                <div style="text-align: center;">
+                    <h3>💼 Career Development</h3>
+                    <p>Career fairs, networking events, and professional workshops</p>
+                </div>
+                <div style="text-align: center;">
+                    <h3>🏆 Sports & Competitions</h3>
+                    <p>Tournaments, matches, and athletic events</p>
+                </div>
+            </div>
+        </section>
+
+        <section>
+            <h2 style="text-align: center; color: white; margin-bottom: 2rem;">Our Team</h2>
+            <div class="team-grid">
+                <div class="team-member">
+                    <div style="background: #667eea; width: 120px; height: 120px; border-radius: 50%; margin: 0 auto 1rem;"></div>
+                    <h3>Dr. Sarah Johnson</h3>
+                    <p>Director of Student Affairs</p>
+                </div>
+                <div class="team-member">
+                    <div style="background: #ff6b6b; width: 120px; height: 120px; border-radius: 50%; margin: 0 auto 1rem;"></div>
+                    <h3>Mike Chen</h3>
+                    <p>Event Coordinator</p>
+                </div>
+                <div class="team-member">
+                    <div style="background: #4ecdc4; width: 120px; height: 120px; border-radius: 50%; margin: 0 auto 1rem;"></div>
+                    <h3>Emily Rodriguez</h3>
+                    <p>Student Engagement Manager</p>
+                </div>
+                <div class="team-member">
+                    <div style="background: #45b7d1; width: 120px; height: 120px; border-radius: 50%; margin: 0 auto 1rem;"></div>
+                    <h3>David Kim</h3>
+                    <p>Technical Lead</p>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer class="footer">
+        <p>&copy; 2024 Campus Event Management System. All rights reserved.</p>
+    </footer>
+</body>
+</html>
