@@ -1,0 +1,212 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gallery - Campus Event Management</title>
+    <link rel="stylesheet" href="../styles/style.css">
+    <style>
+        .gallery-hero {
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            color: white;
+            padding: 120px 0 80px;
+            text-align: center;
+        }
+        
+        .gallery-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 1.5rem;
+            margin: 3rem 0;
+        }
+        
+        .gallery-item {
+            background: white;
+            border-radius: 15px;
+            overflow: hidden;
+            box-shadow: 0 8px 25px rgba(0,0,0,0.1);
+            transition: transform 0.3s ease;
+        }
+        
+        .gallery-item:hover {
+            transform: translateY(-5px);
+        }
+        
+        .gallery-image {
+            width: 100%;
+            height: 250px;
+            background: linear-gradient(45deg, #667eea, #ff6b6b, #4ecdc4);
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            color: white;
+            font-size: 3rem;
+        }
+        
+        .gallery-content {
+            padding: 1.5rem;
+        }
+        
+        .gallery-content h3 {
+            color: #333;
+            margin-bottom: 0.5rem;
+        }
+        
+        .gallery-content p {
+            color: #666;
+            margin-bottom: 1rem;
+        }
+        
+        .event-type {
+            display: inline-block;
+            padding: 0.3rem 1rem;
+            background: #667eea;
+            color: white;
+            border-radius: 20px;
+            font-size: 0.8rem;
+            font-weight: bold;
+        }
+        
+        .filter-buttons {
+            display: flex;
+            justify-content: center;
+            gap: 1rem;
+            margin: 2rem 0;
+            flex-wrap: wrap;
+        }
+        
+        .filter-btn {
+            padding: 0.7rem 1.5rem;
+            border: 2px solid #667eea;
+            background: transparent;
+            color: white;
+            border-radius: 25px;
+            cursor: pointer;
+            transition: all 0.3s ease;
+        }
+        
+        .filter-btn.active,
+        .filter-btn:hover {
+            background: #667eea;
+            color: white;
+        }
+    </style>
+</head>
+<body>
+    <nav class="navbar">
+        <div class="nav-container">
+            <h1 class="nav-logo">CampusEvents</h1>
+            <ul class="nav-menu">
+                <li><a href="index.html" class="nav-link">Home</a></li>
+                <li><a href="events.html" class="nav-link">Events</a></li>
+                <li><a href="gallery.html" class="nav-link active">Gallery</a></li>
+                <li><a href="about.html" class="nav-link">About</a></li>
+                <li><a href="contact.html" class="nav-link">Contact</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <section class="gallery-hero">
+        <div class="container">
+            <h1>Event Gallery</h1>
+            <p>Relive the memorable moments from our campus events</p>
+        </div>
+    </section>
+
+    <main class="container">
+        <div class="filter-buttons">
+            <button class="filter-btn active">All Events</button>
+            <button class="filter-btn">Academic</button>
+            <button class="filter-btn">Social</button>
+            <button class="filter-btn">Sports</button>
+            <button class="filter-btn">Workshops</button>
+        </div>
+
+        <div class="gallery-grid">
+            <div class="gallery-item">
+                <div class="gallery-image">🎓</div>
+                <div class="gallery-content">
+                    <span class="event-type">Academic</span>
+                    <h3>Annual Science Symposium</h3>
+                    <p>Students presenting innovative research projects and discoveries.</p>
+                    <small>February 15, 2024</small>
+                </div>
+            </div>
+            
+            <div class="gallery-item">
+                <div class="gallery-image">🎉</div>
+                <div class="gallery-content">
+                    <span class="event-type">Social</span>
+                    <h3>Spring Festival</h3>
+                    <p>Colorful cultural performances and food festivals on campus.</p>
+                    <small>March 8, 2024</small>
+                </div>
+            </div>
+            
+            <div class="gallery-item">
+                <div class="gallery-image">🏆</div>
+                <div class="gallery-content">
+                    <span class="event-type">Sports</span>
+                    <h3>Inter-College Tournament</h3>
+                    <p>Exciting basketball finals with intense competition.</p>
+                    <small>January 25, 2024</small>
+                </div>
+            </div>
+            
+            <div class="gallery-item">
+                <div class="gallery-image">💻</div>
+                <div class="gallery-content">
+                    <span class="event-type">Workshop</span>
+                    <h3>Web Development Bootcamp</h3>
+                    <p>Students learning modern web technologies hands-on.</p>
+                    <small>February 2, 2024</small>
+                </div>
+            </div>
+            
+            <div class="gallery-item">
+                <div class="gallery-image">🎭</div>
+                <div class="gallery-content">
+                    <span class="event-type">Cultural</span>
+                    <h3>Drama Club Performance</h3>
+                    <p>Stunning theatrical performance by talented students.</p>
+                    <small>March 1, 2024</small>
+                </div>
+            </div>
+            
+            <div class="gallery-item">
+                <div class="gallery-image">🎵</div>
+                <div class="gallery-content">
+                    <span class="event-type">Music</span>
+                    <h3>Battle of the Bands</h3>
+                    <p>Musical extravaganza featuring campus bands.</p>
+                    <small>February 20, 2024</small>
+                </div>
+            </div>
+            
+            <div class="gallery-item">
+                <div class="gallery-image">🤖</div>
+                <div class="gallery-content">
+                    <span class="event-type">Tech</span>
+                    <h3>Robotics Competition</h3>
+                    <p>Innovative robots created by engineering students.</p>
+                    <small>January 30, 2024</small>
+                </div>
+            </div>
+            
+            <div class="gallery-item">
+                <div class="gallery-image">🍕</div>
+                <div class="gallery-content">
+                    <span class="event-type">Social</span>
+                    <h3>International Food Fair</h3>
+                    <p>Culinary delights from around the world.</p>
+                    <small>March 5, 2024</small>
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <footer class="footer">
+        <p>&copy; 2024 Campus Event Management System. All rights reserved.</p>
+    </footer>
+</body>
+</html>
